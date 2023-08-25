@@ -18,7 +18,7 @@ USE `energia` ;
 -- Table `energia`.`fechas`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `energia`.`fechas` (
-  `idfechas` INT NOT NULL,
+  `idfechas` INT NOT NULL AUTO_INCREMENT,
   `fecha` DATE NULL,
   PRIMARY KEY (`idfechas`))
 ENGINE = InnoDB;
@@ -28,7 +28,7 @@ ENGINE = InnoDB;
 -- Table `energia`.`nacional_renovable_no_renovable`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `energia`.`nacional_renovable_no_renovable` (
-  `idnacional_renovable_no_renovable` INT NOT NULL,
+  `idnacional_renovable_no_renovable` INT NOT NULL AUTO_INCREMENT,
   `porcentaje` INT NULL,
   `tipo_energia` VARCHAR(45) NULL,
   `valor` DECIMAL NULL,
@@ -47,7 +47,7 @@ ENGINE = InnoDB;
 -- Table `energia`.`comunidades`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `energia`.`comunidades` (
-  `idcomunidades` INT NOT NULL,
+  `idcomunidades` INT NOT NULL AUTO_INCREMENT,
   `comunidades` VARCHAR(45) NULL,
   PRIMARY KEY (`idcomunidades`))
 ENGINE = InnoDB;
@@ -57,7 +57,7 @@ ENGINE = InnoDB;
 -- Table `energia`.`comunidades_renovable_no_renovable`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `energia`.`comunidades_renovable_no_renovable` (
-  `idcomunidades_renovable_no_renovable` INT NOT NULL,
+  `idcomunidades_renovable_no_renovable` INT NOT NULL AUTO_INCREMENT,
   `porcentaje` INT NULL,
   `tipo_energia` VARCHAR(45) NULL,
   `valor` DECIMAL NULL,
